@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Store</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+	<!-- <a href="./info.php">Info of php</a> -->
+	<div id="header">
+		<header>
+			<div class="user-info">
+				<img src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="profile-image">
+				<div>
+					<span>
+						Good Morning 👋
+					</span>
+					<span class="text-user">
+						Armando Salazar
+					</span>
+				</div>
+			</div>
+			<div class="user-icons">
+				<a href="">
+					<span class="material-symbols-rounded">notifications</span>
+				</a>
+				<a href="">
+					<span class="material-symbols-rounded">favorite</span>
+				</a>
+			</div>
+		</header>
+		<div class="search">
+			<span class="material-symbols-rounded">search</span><input type="text" placeholder="Search">
+		</div>
+	</div>
+	<main>
+		<section>
+			<div class="text-offers">
+				<h2>Special Offers</h2>
+				<a href=""><h3>See all</h3></a>
+			</div>
+			<div class="baner">
+				<h1>25% OFF</h1>
+				<h3>Today's Special!</h3>
+				<p>Get discount for every order, ondy valid for today</p>
+			</div>
+		</section>
+		<section>
+			<div class="text-offers">
+				<h2>Most Popular</h2>
+				<a href=""><h3>See all</h3></a>
+			</div>
+			<div class="tags">
+				<a href="" class="tag-active"><span>Item 1</span></a>
+				<a href=""><span>Item 2</span></a>
+				<a href=""><span>Item 3</span></a>
+				<a href=""><span>Item 4</span></a>
+				<a href=""><span>Item 5</span></a>
+				<a href=""><span>Item 6</span></a>
+				<a href=""><span>Item 7</span></a>
+				<a href=""><span>Item 8</span></a>
+			</div>
+			<div class="baner">
+				<h1>25% OFF</h1>
+				<h3>Today's Special!</h3>
+				<p>Get discount for every order, ondy valid for today</p>
+			</div>
+		</section>
+	</main>
+	<div style="height: 100px;"></div>
+	<footer>
+		<a href="" style="color: #f3f4f5;">
+			<span class="material-symbols-rounded">home</span>
+			<br>
+			<span class="text">Home</span>
+		</a>
+		<a href="">
+			<span class="material-symbols-rounded">shopping_bag</span>
+			<br>
+			<span class="text">Cart</span>
+		</a>
+		<a href="">
+			<span class="material-symbols-rounded">shopping_cart</span>
+			<br>
+			<span class="text">Ordes</span>
+		</a>
+		<a href="">
+			<span class="material-symbols-rounded">account_balance_wallet</span>
+			<br>
+			<span class="text">Wallet</span>
+		</a>
+		<a href="">
+			<span class="material-symbols-rounded">person</span>
+			<br>
+			<span class="text">Profile</span>
+		</a>
+	</footer>
+</body>	
+	<script type="text/javascript">
+		window.onscroll = function() {
+			scrollFunc();
+			console.log('On scrollFunc')
+		};
+
+		const header = document.getElementById("header");
+
+		const sticky = header.offsetTop;
+
+		function scrollFunc() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+</html>
